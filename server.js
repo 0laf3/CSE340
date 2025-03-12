@@ -24,6 +24,11 @@ app.set("layout", "./layouts/layout") // not at views root
  *************************/
 app.use(static)
 
+//Index Route
+app.get("/", function(reg, res){res.render("index", {title: "home"})
+})
+
+
 /* ***********************
  * Local Server Information
  * Values from .env (environment) file
